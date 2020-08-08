@@ -1,6 +1,6 @@
 class Bird {
   constructor(brain) {
-    this.x = 10;
+    this.x = 40;
     this.y = height / 2;
     this.velocity = 0;
     this.score = 0;
@@ -19,7 +19,12 @@ class Bird {
   draw() {
     fill(243, 145, 145);
     // rect(this.x, this.y, 40, 40);
-    image(birdImg, this.x, this.y, 40, 40);
+    push();
+    imageMode(CENTER);
+    translate(this.x, this.y);
+    rotate(map(this.velocity, -10, 10, -45, 45));
+    image(birdImg, 0, 0, 40, 40);
+    pop();
   }
 
   update() {

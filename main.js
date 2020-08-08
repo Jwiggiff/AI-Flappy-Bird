@@ -15,6 +15,8 @@ function preload() {
 }
 
 function setup() {
+  angleMode(DEGREES);
+
   const canvas = createCanvas(800, 600);
   canvas.parent("canvas");
 
