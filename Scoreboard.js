@@ -49,5 +49,7 @@ class Scoreboard {
     this.bestGenScore = Math.max(this.bestGenScore, totalScore);
     this.lastSoloScore = soloScore;
     this.bestSoloScore = Math.max(this.bestSoloScore, soloScore);
+
+    this.draw();
   }
 }

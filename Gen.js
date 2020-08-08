@@ -10,5 +10,6 @@ class Gen {
 
   update() {
     this.generation++;
+    this.draw();
   }
 }
