@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Bird AI</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+    <style>
+      div#canvas {
+        float: left;
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="canvas"></div>
+    <h2 id="generation"></h2>
+    <h4 id="lastGenScore"></h4>
+    <h4 id="bestGenScore"></h4>
+    <h4 id="lastSoloScore"></h4>
+    <h4 id="bestSoloScore"></h4>
+
+    <script src="Scoreboard.js"></script>
+    <script src="geneticAlgorithm.js"></script>
+    <script src="NeuralNetwork.js"></script>
+    <script src="Gen.js"></script>
+    <script src="Bird.js"></script>
+    <script src="Pipe.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
