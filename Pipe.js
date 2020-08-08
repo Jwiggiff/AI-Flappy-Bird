@@ -11,7 +11,7 @@ class Pipe {
 
   draw() {
     fill(100, 255, 100);
-    // rect(this.x, 0, Pipe.w, this.top); // Top pipe
+    // Top pipe
     push();
     scale(1, -1);
     image(
@@ -23,6 +23,7 @@ class Pipe {
     );
     pop();
 
+    // Bottom pipe
     image(
       pipeImg,
       this.x,
@@ -30,7 +31,6 @@ class Pipe {
       Pipe.w,
       pipeImg.height / (pipeImg.width / Pipe.w)
     );
-    // rect(this.x, height - this.bottom, Pipe.w, this.bottom); // Bottom pipe
   }
 
   update() {
