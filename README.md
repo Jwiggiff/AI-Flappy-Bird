@@ -5,4 +5,4 @@ Heavily Inspired by:
 - [The Coding Train's Coding Challenge #100](https://www.youtube.com/watch?v=c6y21FkaUqw)
 
 Check out the website here:
-https://jwiggiff.github.io/Ai-Flappy-Bird
+https://jwiggiff.github.io/AI-Flappy-Bird
