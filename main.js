@@ -73,4 +73,13 @@ function draw() {
   background(bgImg);
   for (let bird of birds) bird.draw();
   for (let pipe of pipes) pipe.draw();
+
+  let pipeScore = Math.floor((birds[0].score - 100) / 120) < 0
+  ? 0
+  : Math.floor((birds[0].score - 100) / 120);
+  textSize(48);
+  textStyle(BOLD);
+  textAlign(RIGHT);
+  textFont("Electrolize");
+  text(pipeScore, width-20, 50);
 }
